@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | QATTER</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h2 class="logo">Q<span class="highlight">ATTE</span>R</h2>
+    <button onclick="goToLogin()" class="btn secondary-btn">Login</button>
+  </header>
+
+  <main class="main">
+    <form id="signupForm" class="form-card" onsubmit="signup(event)">
+      <h1 class="form-title">Create Account</h1>
+      <div id="signupMessage" class="message"></div>
+
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="text" id="mat-no" placeholder="Matric Number / ID" required />
+      <input type="password" id="password" placeholder="Password" required />
+
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="student">Student</option>
+        <option value="lecturer">Lecturer</option>
+      </select>
+
+      <button type="submit" class="btn primary-btn">Sign Up</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 QATTER. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "name": "OMOGBAI THEOPHILUS",
+      "matNo": "Psc2105378",
+      "password": "123456",
+      "role": "lecturer"
+    },
+    {
+      "name": "john bosco",
+      "matNo": "Psc2105377",
+      "password": "123456",
+      "role": "student"
+    }
+  ],
+  "attendance": []
+}

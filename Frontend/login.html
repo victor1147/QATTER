@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="header">
+    <h2>Q<span class="atte-logo">ATTE</span>R</h2>
+    <button onclick="goToSignUp()" class="header-btn">Sign Up</button>
+  </div>
+
+  <div class="main">
+    <form id="loginForm" onsubmit="login(event)">
+      <p class="login">Login</p>
+      <div id="loginMessage"></div>
+
+      <input type="text" id="mat-no" placeholder="Matric Number" required /><br />
+      <input type="password" id="password" placeholder="Password" required /><br />
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+  </div>
+</body>
+</html>

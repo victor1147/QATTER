@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecturer Dashboard | QR Attendance</title>
+
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body id="lecturer-body">
+
+  <div class="header">
+    <h2>Lecturer Dashboard</h2>
+    <span id="welcomeMessage"></span>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <div class="main">
+    <!-- QR Generator -->
+    <div class="card">
+      <h3>Generate Attendance QR Code</h3>
+      <input type="text" id="course" placeholder="Enter Course Code (e.g., CSC301)" />
+      <p id="courseError" class="error-message"></p>
+      <p id="timer"></p>
+      <div id="qrcode" class="qr-display"></div>
+      <div class="button-group">
+        <button class="btn" onclick="generateQR()">Generate QR</button>
+        <button class="btn-outline" onclick="printQR()">Print</button>
+      </div>
+    </div>
+
+    <!-- Attendance Actions -->
+    <div class="attendance-actions">
+      <button class="btn" onclick="updateLecturerTable()">Refresh Table</button>
+      <button class="btn-outline" onclick="exportToExcel()">Export Excel</button>
+      <button class="btn-outline" onclick="exportToPDF()">Export PDF</button>
+    </div>
+
+    <!-- Attendance Table -->
+    <div class="attendance-container">
+      <h3>Attendance Records</h3>
+      <table id="attendanceTable">
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+  </div>
+</body>
+</html>

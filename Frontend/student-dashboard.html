@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | QR Attendance</title>
+
+  <!-- Html5 QR Code Library -->
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="header">
+    <h2>Student Dashboard</h2>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <div class="main">
+    <p id="welcomeMessage" class="welcome"></p>
+
+    <!-- Scanner Container -->
+    <div id="scannerContainer">
+      <h3>Scan QR to Mark Attendance</h3>
+      <div id="reader" style="width: 300px; height: 300px; margin: auto;"></div>
+    </div>
+
+    <!-- Attendance Table -->
+    <div class="attendance-section">
+      <h3>My Attendance</h3>
+      <table id="studentAttendanceTable">
+        <thead>
+          <tr>
+            <th>S/N</th>
+            <th>Name</th>
+            <th>Matric Number</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4">No attendance yet</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
