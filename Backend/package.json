@@ -1,20 +1,20 @@
 {
-  "name": "qr-attendance-backend",
+  "name": "qr_code-attendance",
   "version": "1.0.0",
-  "description": "QR Attendance WebApp Backend",
-  "main": "server.js",
-  "type": "module",
-  "scripts": {
-    "start": "node server.js"
+  "description": "",
+  "main": "index.js",
+ "scripts": {
+  "start": "node server.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victor1147/QATTER.git"
   },
-  "dependencies": {
-    "body-parser": "^1.20.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.6.1",
-    "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2",
-    "jspdf": "^3.0.3",
-    "qrcode": "^1.5.4",
-    "xlsx": "^0.18.5"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victor1147/QATTER/issues"
+  },
+  "homepage": "https://github.com/Victor1147/QATTER#readme"
 }
