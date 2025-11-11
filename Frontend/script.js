@@ -3,7 +3,8 @@
    Backend Integrated Version
    =================================== */
 
-const API_URL = "http://localhost:5000"; // Update if deployed
+const API_URL = "https://qatter.onrender.com";
+
 
 /* ---------- Navigation ---------- */
 function goToLogin() { window.location.href = "login.html"; }
